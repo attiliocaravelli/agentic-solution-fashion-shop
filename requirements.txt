@@ -1,0 +1,18 @@
+# Data Processing ad alte prestazioni su Parquet
+duckdb>=1.0.0
+pyarrow>=15.0.0
+pandas>=2.2.0
+
+# SDK Google Cloud & Vertex AI Gemini
+google-cloud-aiplatform>=1.60.0
+google-genai>=0.1.1
+google-cloud-storage>=2.16.0
+
+# Modelli dati e validazione
+pydantic>=2.7.0
+
+# UI Demo per la giuria
+streamlit>=1.35.0
+
+# Utilities
+python-dotenv>=1.0.0

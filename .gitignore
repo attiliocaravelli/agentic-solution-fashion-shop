@@ -1,0 +1,31 @@
+# Dati locali e archivi pesanti (non devono andare su Git - Requisito R9)
+data/
+no_include_docs/
+requisiti_funzionali/
+scripts/
+*.parquet
+*.zip
+*.csv
+*.ini 
+README_ITA.md
+
+# Credenziali e variabili d'ambiente con segreti
+.env
+*.json
+*credentials*
+service_account*.json
+
+# Cache Python e ambienti virtuali
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.pytest_cache/
+
+# File di sistema e IDE
+.DS_Store
+.idea/
+.vscode/
+team-marconi-main/

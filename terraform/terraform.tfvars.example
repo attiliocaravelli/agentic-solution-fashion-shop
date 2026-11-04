@@ -1,0 +1,16 @@
+# Configurazione di Esempio per l'Ambiente di Produzione Fashop
+project_id              = "qwiklabs-gcp-01-11c2bfff0128" # Sostituire con il proprio GCP Project ID
+region                  = "europe-west1"
+zone                    = "europe-west1-b"
+environment             = "prod"
+app_name                = "fashop-genrec"
+
+# Configurazione Cache & Dimensionamento
+redis_memory_size_gb    = 1
+cloud_run_min_instances = 1 # Garantisce 0ms di cold-start per l'API di serving
+cloud_run_max_instances = 10
+
+# Schedulazione Batch Offline
+batch_cron_schedule     = "0 3 * * *" # Ogni notte alle ore 03:00 UTC
+batch_time_zone         = "Europe/Rome"
+
